@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+body {
+	background: linear-gradient(135deg, #233831, #364442);
+	animation: animateGradient 10s ease infinite alternate;
+}
+
+nav {
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #dfdfdf;
+}
+.active {
+	background-color: rgba(26, 46, 33, 0.663);
+	box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
+	backdrop-filter: blur(15px);
+	z-index: 20;
+}
+.logo {
+	margin-left: 5%;
+}
+.menu {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 5%;
+}
+.menu button {
+	padding: 10px 2px;
+	margin: 0.9em 1.2em;
+	background: none;
+	border: none;
+}
+.menu button a {
+	font-family: cursive;
+	font-size: 1.3rem;
+	text-decoration: none;
+	border-radius: 10px 10 0 0;
+	color: #dfdfdf;
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+.menu button::after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #dfdfdf;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: 0.3s ease;
+}
+.menu button:hover::after {
+	transform: scaleX(1);
+}
+.menu button a:hover {
+	color: #8fdcc2;
+}
+@font-face {
+	font-family: myFirstFont;
+	src: url("assets/FontsFree-Net-Billion-Miracles.ttf");
+}
+
+.logo {
+	font-family: myFirstFont, cursive;
+	color: whitesmoke;
+}
+@keyframes animateGradient {
+	0% {
+		background: linear-gradient(
+			-45deg,
+			#364442,
+			#002313,
+			#00713d,
+			#005e33,
+			#004123,
+			#233831,
+			#364442,
+			#002313
+		);
+		background-size: 300% 300%;
+		background-position: 0% 50%;
+	}
+	100% {
+		background: linear-gradient(
+			-45deg,
+			#364442,
+			#002313,
+			#00713d,
+			#005e33,
+			#004123,
+			#233831,
+			#364442,
+			#002313
+		);
+		background-size: 300% 300%;
+		background-position: 100% 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		margin-left: 3%;
+	}
+
+	.menu {
+		margin-right: 3%;
+	}
+
+	.menu button {
+		padding: 8px 15px;
+	}
+
+	#naam {
+		font-size: 3rem;
+	}
+
+	#sub {
+		font-size: 1.2rem;
+	}
+
+	#description {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#paticles-js {
+		height: 30vh;
+	}
+	.logo {
+		margin-left: 2%;
+	}
+
+	.menu {
+		margin-right: 2%;
+	}
+
+	.menu button {
+		padding: 6px 12px;
+	}
+
+	#naam {
+		font-size: 2.5rem;
+	}
+
+	#sub {
+		font-size: 1.2rem;
+	}
+
+	#description {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	@keyframes animateGradient {
+		0% {
+			background: linear-gradient(-45deg, #00713d, #233831, #364442, #002313);
+			background-size: 300% 300%;
+			background-position: 0% 50%;
+		}
+		100% {
+			background: linear-gradient(-45deg, #00713d, #233831, #364442, #002313);
+			background-size: 300% 300%;
+			background-position: 100% 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	@keyframes animateGradient {
+		0% {
+			background: linear-gradient(-45deg, #233831, #364442);
+			background-size: 300% 300%;
+			background-position: 0% 50%;
+		}
+		100% {
+			background: linear-gradient(-45deg, #233831, #364442);
+			background-size: 300% 300%;
+			background-position: 100% 50%;
+		}
+	}
+}

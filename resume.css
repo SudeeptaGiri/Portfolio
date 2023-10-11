@@ -1,0 +1,25 @@
+/* Styling for the resume section */
+body {
+	overflow: hidden;
+}
+.resume-section {
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pdf-container {
+	width: 80%;
+	max-width: 800px;
+	height: 80vh;
+	border: 1px solid #ccc;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}

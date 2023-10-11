@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sudeepta || about</title>
+		<!-- Link css -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="about.css" />
+		<!-- Font Style -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">LOGO</div>
+				<div class="menu">
+					<button><a href="index.html">Home</a></button>
+					<button><a href="about.html">About</a></button>
+					<button><a href="project.html">Project</a></button>
+					<button><a href="resume.html">Resume</a></button>
+					<button><a href="contact.html">Contact</a></button>
+				</div>
+			</nav>
+		</header>
+		<article class="article-container">
+			<div class="about">
+				<h2 class="heading">Know Who <span>I AM</span></h2>
+				<p class="describe">
+					Greetings! I am <span>Sudeepta Giri,</span> hailing from the vibrant city of Bhubaneswar, India. Currently, I am a dedicated student pursuing my journey in <span>Computer Science & Engineering.</span>  With a fervent zeal, I craft immersive web applications using an array of technologies such as <i>JavaScript, ReactJS, Node.js, PHP,</i>  and a medley of other cutting-edge libraries and frameworks.
+				</p>
+				<p class="hobby">
+					When not immersed in coding, I indulge in a symphony of other passions:
+					<ul class="hobby-list">
+						<li>Imparting knowledge through teaching</li>
+						<li>Capturing fleeting moments with my lens</li>
+						<li>Embracing the worlds of sports and anime</li>
+					</ul>
+				</p>
+			</div>
+			<div class="avatar">
+				<img src="assets/hii.svg" alt="svg saying hello">
+			</div>
+   	 	</article>
+		<section class="sec-container">
+			<div class="avatar"><img src="assets/work.svg" alt="svg typing somthing"></div>
+			<div class="about">
+				<h2 class="heading">What <span>I Do</span></h2>
+				<p class="hobby">
+					CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+					<ul class="hobby-list">
+						<li>Develop highly interactive Front end / User Interfaces for your web and mobile applications</li>
+						<li>Progressive Web Applications ( PWA ) in normal and SPA Stacks</li>
+						<li>Integration of third party services such as Firebase/ AWS / Digital Ocean</li>
+					</ul>
+				</p>
+			</div>
+
+		</section>
+		<section class="skill-container">
+			<h2 class="heading">Professional <span>Skillset</span></h2>
+			<div class="skills">
+				<div><img src="assets/Java.svg" alt="java"></div>
+				<div><img src="assets/JavaScript.svg" alt="js"></div>
+				<div><img src="assets/Node.svg" alt="node"></div>
+				<div><img src="assets/React.svg" alt="react"></div>
+				<div><img src="assets/Python.svg" alt="python"></div>
+				<div><img src="assets/MongoDB.svg" alt="MongoDB"></div>
+				<div><img src="assets/PostgreSQL.svg" alt="PSQL"></div>
+				<div><img src="assets/Next.svg" alt="next"></div>
+				<div><img src="assets/git.svg" alt="git"></div>
+				<div><img src="assets/FireBase.svg" alt="FireBase"></div>
+			</div>
+		</section>
+
+
+		<script>
+			const nav = document.querySelector("nav");
+			document.addEventListener("scroll", ()=>{
+				if(window.scrollY>0){
+					nav.classList.add("active");
+				}else{
+					nav.classList.remove("active");
+				}
+			})
+		</script>
+	</body>
+</html>
